@@ -1,0 +1,2 @@
+# Python standard library only.
+# Requires system packages: libgpiod tools and PipeWire pw-play.

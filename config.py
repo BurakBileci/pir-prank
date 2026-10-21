@@ -1,0 +1,19 @@
+from pathlib import Path
+
+PROJECT_DIR = Path(__file__).resolve().parent
+SOUNDS_DIR = PROJECT_DIR / "sounds"
+LOGS_DIR = PROJECT_DIR / "logs"
+
+GPIO_CHIP = "gpiochip0"
+GPIO_LINE = 17
+
+MIN_DELAY_SECONDS = 1
+MAX_DELAY_SECONDS = 5
+
+MIN_VOLUME = 0.25
+MAX_VOLUME = 0.45
+
+MIN_PLAY_SECONDS = 2
+MAX_PLAY_SECONDS = 6
+
+MAX_PENDING_EVENTS = 10
