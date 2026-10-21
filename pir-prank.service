@@ -1,0 +1,13 @@
+[Unit]
+Description=PIR prank sound player
+After=pipewire.service wireplumber.service
+
+[Service]
+WorkingDirectory=%h/pir-prank
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 %h/pir-prank/main.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
