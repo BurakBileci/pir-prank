@@ -5,6 +5,7 @@ class PirSensor:
     def __init__(self, chip, line):
         self.command = [
             "/usr/bin/gpiomon",
+            "--line-buffered",
             "--rising-edge",
             chip,
             str(line),
